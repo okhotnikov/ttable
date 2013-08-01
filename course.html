@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TimeTable</title>
+	<link href="style/css/bootstrap.css" rel="stylesheet">
+	<link href="style/css/personal.css" rel="stylesheet">
+</head>
+<body>
+	<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-6">
+			<ul class="breadcrumb">
+				<a style="text-decoration: none;" class="icon-search accordion-toggle" data-toggle="modal" href="#search"></a>
+				
+				&nbsp;|&nbsp;
+  				<li><a href="#"><i class="icon-home"></i></a></li>
+  				<li><a href="#">Library</a></li>
+  				<li class="active">Data</li>
+			</ul>
+			<h3 class="course">Какой курс?</h3>
+			<ul class="row nav course">
+				<li class="col-4"><a href="#">1</a></li>
+				<li class="col-4"><a href="#">2</a></li>
+				<li class="col-4"><a href="#">3</a></li>
+				
+				<li class="col-4"><a href="#">4</a></li>
+				<li class="col-4"><a href="#">5</a></li>
+				<li class="col-4"><a href="#">6</a></li>
+			</ul>
+
+			<div class="panel">
+  				<div class="panel-heading">Информация на сайте не являются официальной и может отличаться от реальной.</div>
+  				<div class="row">
+	  				<div class="col-4">
+		  				<dl>
+		  					<dt>Сайты&nbsp;вузов</dt>
+		  					<dd><a href="">УлГТУ</a></dd>
+		  					<dd><a href="">УлГУ</a></dd>
+						</dl>
+					</div>
+					<div class="col-4">
+						<dl>
+		  					<dt>Другой&nbsp;контент</dt>
+		  					<dd><a href="">Ссылка</a></dd>
+		  					<dd><a href="">Нессылка</a></dd>
+						</dl>
+					</div>
+					<div class="col-4">
+						<dl>
+		  					<dt>Рыба</dt>
+		  					<dd><a href="">Голова</a></dd>
+		  					<dd><a href="">Хвост</a></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+
+			<div class="btn-group pull-right ">
+				<a href="#" class="button version">v3.0</a>
+				<a href="#" rel="tooltip" class="button" data-original-title="​&quot;В&nbsp;разработке&quot;"><i class="icon-star-empty"></i></a>
+				<a href="mailto:ulstu.rasp@gmail.com" class="button"><i class="icon-envelope"></i></a>
+				<a class="button" data-toggle="modal" href="#autorize"><i class="icon-user"></i></a>
+			</div>
+		</div>
+ 		<div class="col-sm-3"></div>
+	</div>
+</div>
+
+<!-- Search dialog form -->
+	<div class="modal fade" id="search" aria-hidden="false">
+		<div class="modal-dialog top">
+			<div class="modal-content top">
+				<div class="modal-header top">
+        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        			<h5 class="modal-title">Что ищем?</h5>
+     			</div>
+				<div class="modal-body top">
+					<div class="row nopadding_lr">
+						<div class="col-lg-12 nopadding_lr">
+							<div class="input-group">
+								<input type="text" class="form-control input-small">
+								<span class="input-group-btn">
+									<button class="btn btn-default btn-small" type="button">Перейти</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- /.Search dialog form -->
+
+<!-- Search dialog form -->
+	<div class="modal fade" id="autorize" aria-hidden="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        			<h5 class="modal-title">Вход</h5>
+     			</div>
+  				<form class="form-inline">
+					<div class="row modal-body nopadding_lr">
+						<div class="col-lg-6 padding_s">
+							<input type="text" class="form-control" id="inputEmail" placeholder="Email">
+						</div>
+						<div class="col-lg-6 ">
+							<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Запомнить меня
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer nomargin_tb">
+						<div class="btn-group">
+       						<button type="submit" class="btn btn-success btn-small">Войти</button>
+       						<button type="button" class="btn btn-success btn-small dropdown-toggle" data-toggle="dropdown">
+    							<span class="caret"></span>
+  							</button>
+       						<ul class="dropdown-menu nopadding_tb" style="margin-left: -190%;">
+    							<li><a href="#">Зарегистрироваться и войти</a></li>
+  							</ul>
+       					</div>
+      				</div>
+      			</form>
+			</div>
+		</div>
+	</div>
+<!-- /.Search dialog form -->
+
+<!-- JavaScript -->
+	<script src="style/js/jquery.js"></script>
+	<script src="style/js/bootstrap.js"></script>
+	<!--<script src="style/js/dropdown.js"></script>
+	<script src="style/js/modal.js"></script>-->
+	
+<!-- /.JavaScript -->
+
+</body>
+</html>
