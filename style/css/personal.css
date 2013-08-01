@@ -6,6 +6,12 @@ body {
 	font-size: 14px;
 }
 
+h3.course {
+  font-family: 'Lucida Grande', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
 /* ------------------------------------------------------- Special top modal dialog ------------------------------------------------------- */
 .modal-content.top {
   border-top: 0px;
@@ -70,7 +76,8 @@ input.small {
 }
 
 /* -------------------------------------------------------    /.breadcrumb menu     ------------------------------------------------------- */
-
+  
+/* -------------------------------------------------------         nav menu         ------------------------------------------------------- */
 .row .nav {
 	background-color:  #FFF;
 
@@ -88,17 +95,34 @@ input.small {
 	margin-bottom: 9px;
 }
 
-.row .nav li[class^="col-"] {
+.row.nav li[class^="col-"] {
 	padding: 0px;
 	text-align: center;
 	border-top: 1px solid #dadada;
 }
-.row .nav li:nth-child(2n){
+.row.nav li:nth-child(2n){
 	border-left: 1px solid #dadada;
 }
-.row .nav li:nth-child(1) li:nth-child(2){
+.row.nav li:nth-child(1) li:nth-child(2){
 	border-top: 0px;
 }
+
+.row.nav.course li[class^="col-"] {
+  border-left: 0px;
+}
+.row.nav.course li:nth-child(3n+2){
+  border-left: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+}
+.row.nav.course li[class^="col-"] a {
+  height: 50px;
+  font-size: 25px;
+  font-weight: 100;
+  color: rgb(100, 100, 100);
+  padding: 8px 15px;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
 
 .panel {
   background-color: rgb(242, 242, 242);
@@ -349,6 +373,10 @@ dd a:hover {
 
 .btn-group.open .button.dropdown-toggle {
   background-color: #e6e6e6;
+}
+
+.button.version {
+  font-size: 12px;
 }
 
 /* -------------------------------------------------------  /.btn with bootstrap 2  ------------------------------------------------------- */
